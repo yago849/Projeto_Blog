@@ -5,52 +5,76 @@ import Destinos from "./components/Destinos.vue";
 </script>
 
 <template>
-  <div>
-    <header>
-      <img
-        alt="Vue logo"
-        class="logo"
-        src="./assets/logo.svg"
-        width="125"
-        height="125"
-      />
-
-      <div class="wrapper">
-        <HelloWorld msg="You did it!" />
+  div>
+      <div class="container">
+        <h1>Carros Vencedores de Le Mans</h1>
+        <div class="item carro">
+          <img src="/src/assets/2022.jpg" />
+          <span class="ano">2022</span>
+        </div>
+        <div class="item carro">
+          <img src="/src/assets/2023.jpg" alt="Descrição da Imagem 2"/>
+          <span class="ano">2023</span>
+        </div>
+        <div class="item carro">
+          <img src="/src/assets/2024.jpg" alt="Descrição da Imagem 3"/>
+          <span class="ano">2024</span>
+        </div>
       </div>
-    </header>
-
-    <main>
-      <TheWelcome />
-    </main>
-  </div>
+    </div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
+ody,
+      html {
+        justify-content: center;
+        align-items: center;
+      }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      .img {
+        width: 200px;
+      }
+      .item {
+        margin: 10px 0;
+        padding: 20px;
+        width: 600px;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+      .carro {
+        position: relative;
+        margin: 20px;
+        width: 600px;
+        height: 350px;
+      }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+      .carro img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+      .carro .ano {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
 </style>

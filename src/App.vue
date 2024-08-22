@@ -5,7 +5,7 @@ import Destinos from "./components/Destinos.vue";
 </script>
 
 <template>
-  div>
+  <div>
       <div class="container">
         <h1>Carros Vencedores de Le Mans</h1>
         <div class="item carro">
@@ -25,7 +25,7 @@ import Destinos from "./components/Destinos.vue";
 </template>
 
 <style scoped>
-ody,
+
       html {
         justify-content: center;
         align-items: center;

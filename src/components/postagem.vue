@@ -1,11 +1,14 @@
-<script>
-  
-</script>
-
 <template>
-  <postagem/>
-  <template>
-    
+    <div class="container">
+      <h1>Carros Vencedores de Le Mans</h1>
+      <div class="item carro">
+        <img
+          src="../assets/2022.jpg"
+          alt="Toyota"/>
+        <span class="ano">2022</span>
+        <p></p>
+      </div>
+    </div>
 </template>
 
 <style>
@@ -56,40 +59,4 @@
   color: #fff;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-</style>
-</template>
-
-<script>
-
-</script>
-
-<style scoped>
-body,
-html {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  margin: 0;
-}
-
-
-
-
-
-h1 {
-  margin-bottom: 20px;
-}
-
-h2 {
-  margin-top: 10px;
-  color: #333;
-}
-
-p {
-  font-size: 16px;
-  color: #666;
-}
-
-
 </style>

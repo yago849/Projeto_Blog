@@ -3,28 +3,35 @@ import Destinos from "./components/Destinos.vue";
 </script>
 
 <template>
+  <Destinos/>
   <div>
       <div class="container">
         <h1>Carros Vencedores de Le Mans</h1>
         <div class="item carro">
-          <img src="/src/assets/2022.jpg" />
+          <img src="./assets/2022.jpg"/>
+          <h3>breve descição</h3>
           <span class="ano">2022</span>
         </div>
+
         <div class="item carro">
-          <img src="/src/assets/2023.jpg" alt="Descrição da Imagem 2"/>
+          <img src="./assets/2023.jpg"/>
+          <h3>breve descição</h3>
           <span class="ano">2023</span>
         </div>
+
         <div class="item carro">
-          <img src="/src/assets/2024.jpg" alt="Descrição da Imagem 3"/>
+          <img src="/src/assets/2024.jpg"/>
+          <h3>breve descição</h3>
           <span class="ano">2024</span>
         </div>
+
       </div>
     </div>
 </template>
 
 <style scoped>
 
-      html {
+      template {
         justify-content: center;
         align-items: center;
       }
@@ -32,6 +39,7 @@ import Destinos from "./components/Destinos.vue";
       .container {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         height: 100%;
@@ -44,11 +52,6 @@ import Destinos from "./components/Destinos.vue";
         padding: 20px;
         width: 600px;
         text-align: center;
-      }
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
       }
 
       .carro {

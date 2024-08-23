@@ -1,5 +1,6 @@
 <script setup>
 import Destinos from "./components/Destinos.vue";
+import postagem from "./components/postagem.vue";
 </script>
 
 <template>

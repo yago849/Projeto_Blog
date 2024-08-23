@@ -1,14 +1,16 @@
 <script>
+import postagem from './postagem.vue'
   
 </script>
 
 <template>
   <postagem/>
-  <template>
-    
+
 </template>
 
+
 <style>
+
 .container {
   display: flex;
   flex-direction: column;
@@ -56,14 +58,6 @@
   color: #fff;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-</style>
-</template>
-
-<script>
-
-</script>
-
-<style scoped>
 body,
 html {
   display: flex;

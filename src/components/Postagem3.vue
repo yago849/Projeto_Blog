@@ -1,11 +1,15 @@
+<scrit>
+
+</scrit>
+
 <template>
-  <div class="container">
-    <div class="item carro">
-      <img src="./assets/2022.jpg"/>
-      <h3>breve descição</h3>
-      <span class="ano">2022</span>
+    <div class="container">
+        <div class="item carro">
+            <img src="./assets/2024.jpg"/>
+            <h3>breve descição</h3>
+            <span class="ano">2024</span>
+        </div>
     </div>
-  </div>
 </template>
 
 <style>

@@ -1,36 +1,19 @@
 <script setup>
 import Destinos from "./components/Destinos.vue";
 import postagem from "./components/postagem.vue";
+import Postagem2 from "./components/Postagem2.vue";
+import Postagem3 from "./components/Postagem3.vue";
 </script>
 
 <template>
   <Destinos/>
-  <div>
-      <div class="container">
-        <h1>Carros Vencedores de Le Mans</h1>
-        <div class="item carro">
-          <img src="./assets/2022.jpg"/>
-          <h3>breve descição</h3>
-          <span class="ano">2022</span>
-        </div>
-
-        <div class="item carro">
-          <img src="./assets/2023.jpg"/>
-          <h3>breve descição</h3>
-          <span class="ano">2023</span>
-        </div>
-
-        <div class="item carro">
-          <img src="/src/assets/2024.jpg"/>
-          <h3>breve descição</h3>
-          <span class="ano">2024</span>
-        </div>
-
-      </div>
-    </div>
+  <postagem/>
+  <Postagem2/>
+  <Postagem3/>
+  
 </template>
 
-<style scoped>
+<style>
 
       template {
         justify-content: center;

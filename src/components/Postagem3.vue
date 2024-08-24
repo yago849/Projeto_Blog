@@ -1,63 +1,51 @@
-<scrit>
-
-</scrit>
-
 <template>
-    <div class="container">
-        <div class="item carro">
-            <img src="./assets/2024.jpg"/>
-            <h3>breve descição</h3>
-            <span class="ano">2024</span>
-        </div>
+    <div class="post">
+      <figure>
+        <figcaption class="caption">2024</figcaption>
+        <img alt="ferraridnv" src="./assets/2024.jpg" />
+      </figure>
+      <p>Em 2024, a Ferrari consolidou sua hegemonia em Le Mans com uma vitória consecutiva, provando que o sucesso do ano anterior não foi apenas sorte. A equipe demonstrou uma incrível consistência e habilidade técnica, garantindo sua posição como uma das maiores na história do automobilismo.</p>
+      <p style="text-align: right; margin: 0px 0px 0px 10px;">Yago</p>
     </div>
-</template>
-
-<style>
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.img {
-  width: 600px;
-  height: 350px;
-  object-fit: cover;
-}
-
-.item {
-  margin: 10px 0;
-  padding: 20px;
-  width: 600px;
-  text-align: center;
-}
-
-
-.carro {
-  position: relative;
-  margin: 20px;
-  width: 600px;
-  height: 350px;
-}
-
-.carro img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.carro .ano {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 60px;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-</style>
+  </template>
+  
+  <script>
+  export default {
+    name: 'Postagem3'
+  }
+  </script>
+  
+  <style scoped>
+  .post {
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  figure {
+    margin: 0;
+    position: relative;
+  }
+  
+  .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+  
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  </style>
+  

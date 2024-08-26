@@ -2,9 +2,12 @@
     <div class="post">
       <figure>
         <figcaption class="caption">2024</figcaption>
-        <img alt="ferraridnv" src="./assets/2024.jpg" />
+        <img alt="ferraridnv" src="../assets/2024.jpg" />
       </figure>
-      <p>Em 2024, a Ferrari consolidou sua hegemonia em Le Mans com uma vitória consecutiva, provando que o sucesso do ano anterior não foi apenas sorte. A equipe demonstrou uma incrível consistência e habilidade técnica, garantindo sua posição como uma das maiores na história do automobilismo.</p>
+      <p>Em 2024, a Ferrari consolidou sua hegemonia em Le Mans com uma vitória consecutiva,
+         provando que o sucesso do ano anterior não foi apenas sorte.
+          A equipe demonstrou uma incrível consistência e habilidade técnica,
+           garantindo sua posição como uma das maiores na história do automobilismo.</p>
       <p style="text-align: right; margin: 0px 0px 0px 10px;">Yago</p>
     </div>
   </template>

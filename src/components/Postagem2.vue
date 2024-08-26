@@ -2,9 +2,11 @@
     <div class="post">
       <figure>
         <figcaption class="caption">2023</figcaption>
-        <img alt="Ferrari" src="./assets/2023.jpg" />
+        <img alt="Ferrari" src="../assets/2023.jpg" />
       </figure>
-      <p>Em 2023, a Ferrari voltou ao topo do pódio em Le Mans após décadas de ausência. O retorno triunfante da Scuderia foi marcado por uma performance impecável do 499P, que levou a equipe italiana a uma vitória histórica na corrida de resistência mais prestigiada do mundo.</p>
+      <p>Em 2023, a Ferrari voltou ao topo do pódio em Le Mans após décadas de ausência.
+         O retorno triunfante da Scuderia foi marcado por uma performance impecável do 499P,
+          que levou a equipe italiana a uma vitória histórica na corrida de resistência mais prestigiada do mundo.</p>
       <p style="text-align: right; margin: 0px 0px 0px 10px;">Yago</p>
     </div>
   </template>

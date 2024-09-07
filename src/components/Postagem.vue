@@ -6,6 +6,7 @@
         demonstrando uma combinação de velocidade, resistência e estratégia impecável. 
         O GR010 Hybrid mostrou-se imbatível, dominando a corrida desde o início."
       autor="Yago"
+      img1="assets/2022.jpg"
     />
   </div>
 </template>

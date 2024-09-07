@@ -7,6 +7,7 @@
           A equipe demonstrou uma incrível consistência e habilidade técnica,
            garantindo sua posição como uma das maiores na história do automobilismo."
       autor="Yago"
+      img3="assets/2024.jpg"
     />
   </div>
 </template>

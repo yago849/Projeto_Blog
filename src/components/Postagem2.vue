@@ -6,6 +6,7 @@
          O retorno triunfante da Scuderia foi marcado por uma performance impecável do 499P,
           que levou a equipe italiana a uma vitória histórica na corrida de resistência mais prestigiada do mundo."
       autor="Yago"
+      img2="assets/2023.jpg"
     />
   </div>
 </template>

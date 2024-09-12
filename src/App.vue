@@ -1,24 +1,21 @@
-<template>
-  <div class="container">
-    <Postagem />
-    <Postagem2 />
-    <Postagem3 />
-  </div>
-</template>
 
-<script>
+<script setup>
 import Postagem from './components/Postagem.vue';
 import Postagem2 from './components/Postagem2.vue';
 import Postagem3 from './components/Postagem3.vue';
+import logotipo from './assets/logo.png';
 
-export default {
-  components: {
-    Postagem,
-    Postagem2,
-    Postagem3
-  }
-}
 </script>
+
+<template>
+  <div class="container">
+    <Postagem  />
+    <Postagem2 />
+    <Postagem3 />
+
+  </div>
+</template>
+
 
 <style scoped>
 .container {

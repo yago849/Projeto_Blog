@@ -11,6 +11,7 @@ export default {
 
 <template>
     <div>
+      
         <img :src="imagem">
         <p>{{ conteudo }}</p>
         <h2 style="text-align: right; margin: 0px 0px 0px 10px;">{{ autor }} </h2>

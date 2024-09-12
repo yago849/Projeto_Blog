@@ -1,57 +1,23 @@
+<script setup>
+import componenteProps from './componenteProps.vue'
+import imagempost1 from "../assets/2022.jpg"
+</script>
+
 <template>
   <div class="post">
 
     <componenteProps
+
       conteudo="Em 2022, a Toyota conquistou uma vitória impressionante nas 24 Horas de Le Mans, 
         demonstrando uma combinação de velocidade, resistência e estratégia impecável. 
         O GR010 Hybrid mostrou-se imbatível, dominando a corrida desde o início."
       autor="Yago"
-      img1="assets/2022.jpg"
+      :imagem="imagempost1"
     />
   </div>
 </template>
 
-<script>
-import componenteProps from './componenteProps.vue'
 
-export default {
-  name: 'Postagem',
-  components: {
-    componenteProps
-  }
-}
-</script>
+<style>
 
-<style scoped>
-.post {
-  width: 80%;
-  max-width: 600px;
-  margin-bottom: 20px;
-  text-align: center;
-  position: relative;
-}
-
-figure {
-  margin: 0;
-  position: relative;
-}
-
-.caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 32px;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.8);
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-  z-index: 1;
-}
-
-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-}
 </style>

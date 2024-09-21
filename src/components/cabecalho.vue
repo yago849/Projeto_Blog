@@ -7,7 +7,7 @@ import botao from './Botao.vue'
 
 <template>
 <cabecalhoprops
-  nome="Blog do Código"
+  nome="Le Mans"
   link=""
 />
 
@@ -23,16 +23,16 @@ import botao from './Botao.vue'
 
 <style scoped>
 
+
 .menu{
   text-align: center;
 }
+
 .button{
   margin-right: 40px;
 }
 
-.cabecalho-col1{
-  height: 30px;
-}
+/* Removed duplicate .cabecalho-col1 class */
 p{
   width: 1000px;
 }

@@ -11,6 +11,7 @@ import Cabecalho from './components/cabecalho.vue';
 <template>
   <div class="container">
     <Cabecalho />
+    <BarraMenu />
     <Postagem  />
     <Postagem2 />
     <Postagem3 />

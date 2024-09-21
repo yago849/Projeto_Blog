@@ -4,6 +4,7 @@ import Postagem from './components/Postagem.vue';
 import Postagem2 from './components/Postagem2.vue';
 import Postagem3 from './components/Postagem3.vue';
 import logotipo from './assets/logo.png';
+import Cabecalho from './components/cabecalho.vue';
 
 </script>
 
@@ -12,6 +13,7 @@ import logotipo from './assets/logo.png';
     <Postagem  />
     <Postagem2 />
     <Postagem3 />
+    <Cabecalho />
 
   </div>
 </template>

@@ -6,15 +6,17 @@ import botao from './Botao.vue'
 
 
 <template>
-cabecalho">
-ass="cabecalho-col1">
-:src="logotipo" width=50px>
+<cabecalhoprops
+  nome="Blog do Código"
+  link=""
+/>
 
-textoDoBotao="Login/Logout" link=""/>
-textoDoBotao="Home" link=""/>
-textoDoBotao="Postagens" link="./AreaPostagem.vue"/>
-textoDoBotao="Inscreva-se" link=""/>
+<div class="menu">
 
+  <botao link="https://www.google.com" texto="Home" class="button"/>
+  <botao link="https://www.google.com" texto="Google" class="button"/>
+  <botao link="https://www.google.com" texto="Postagens" class="button"/>
+</div>
 </template>
 
 

@@ -18,7 +18,7 @@ export default {
 <template>
 
   <div id="cabecalho">
-    <div class="cabecalho-col1">
+    <div class="cabecalho-col1" id="nome">
     <h1> {{ nome }} </h1>
     </div> 
 
@@ -34,6 +34,11 @@ export default {
 
 
 <style scoped>
+#nome{  
+  width: 800px;
+  display: inline-flex;
+}
+
 
 #cabecalho{
   display: flex;
@@ -44,7 +49,7 @@ export default {
   height: 30px;
 }
 p{
-  width: 1000px;
+  width: 0px;
 }
 
 h2{
@@ -67,6 +72,7 @@ h1{
 
 .cabecalho-col1{
   display: inline-block;
+
 }
 
 .sla {
@@ -80,6 +86,8 @@ h1{
   font-size: 40px;
 }
 
+#cabecalho-login{
+ text-align: right;
+}
 
-  
 </style>

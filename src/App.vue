@@ -10,11 +10,11 @@ import Cabecalho from './components/cabecalho.vue';
 
 <template>
   <div class="container">
+    <Cabecalho />
     <Postagem  />
     <Postagem2 />
     <Postagem3 />
-    <Cabecalho />
-
+    
   </div>
 </template>
 

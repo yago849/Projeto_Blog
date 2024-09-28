@@ -8,14 +8,14 @@ import botao from './Botao.vue'
 <template>
 <cabecalhoprops
   nome="Le Mans"
-  link=""
+  link="/login"
 />
-
+<p style="height: 20px;"></p>
 <div class="menu">
 
-  <botao link="https://www.google.com" texto="Home" class="button"/>
-  <botao link="https://www.google.com" texto="Google" class="button"/>
-  <botao link="https://www.google.com" texto="Postagens" class="button"/>
+  <botao link="https://www.google.com" nome="Home" class="button"></botao>
+  <botao link="/" nome="Home" class="button"></botao>
+  <botao link="/posts" nome="Postagens" class="button"></botao>
 </div>
 </template>
 

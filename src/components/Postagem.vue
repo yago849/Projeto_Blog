@@ -4,6 +4,7 @@ import imagempost1 from "../assets/2022.jpg"
 </script>
 
 <template>
+<div id="area_postagem">
   <div class="post">
 
     <componenteProps
@@ -12,9 +13,10 @@ import imagempost1 from "../assets/2022.jpg"
         demonstrando uma combinação de velocidade, resistência e estratégia impecável. 
         O GR010 Hybrid mostrou-se imbatível, dominando a corrida desde o início."
       autor="Yago"
-      :imagem="imagempost1"
-    />
+      :imagem="imagempost1"/>
   </div>
+</div>
+
 </template>
 
 

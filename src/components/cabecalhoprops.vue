@@ -14,16 +14,16 @@ export default {
 
 <template>
   <div id="cabecalho">
-    <div class="cabecalho-col1" id="nome">
-      <h1>{{ nome }}</h1>
+    <div class="cabecalho-col1">
+    <h1>{{ nome }}</h1>
     </div>
 
-    <div class="sla">
+    <div class="ttf">
       <div class="cabecalho-col1" id="cabecalho-login">
-        <a :href="link" class="login">Login</a>
-        <p></p>
+        <a :href="link" class="login">Login - Logout</a>
       </div>
     </div>
+    
   </div>
 </template>
 

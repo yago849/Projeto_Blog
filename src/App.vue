@@ -1,10 +1,9 @@
-
 <script setup>
-import Postagem from './components/Postagem.vue';
-import Postagem2 from './components/Postagem2.vue';
-import Postagem3 from './components/Postagem3.vue';
-import logotipo from './assets/logo.png';
-import Cabecalho from './components/cabecalho.vue';
+import Cabecalho from './components/cabecalho.vue'
+import Postagem from './components/componenteBlog.vue'
+import Login from './components/TelaLogin.vue'
+import Home from './components/Home.vue'
+
 
 </script>
 
@@ -17,9 +16,6 @@ import Cabecalho from './components/cabecalho.vue';
     <router-view/>
 
     <Postagem  />
-    <Postagem2 />
-    <Postagem3 />
-    
   </div>
 
 </template>

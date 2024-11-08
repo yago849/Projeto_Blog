@@ -24,22 +24,23 @@ div {
 }
 
 header {
-  background-color: #e4bb28;
+  background-color: #00bae9;
   color: white;
   padding: 20px;
   display: flex;
+  width: 750px;
   justify-content: space-between;
   align-items: center;
 }
 
 nav {
   display: flex;
-  gap: 10px; /* Espaçamento entre os botões */
+  gap: 10px; 
 }
 
 .nav-button {
   background-color: white;
-  color: #e4bb28;
+  color: #ff0000;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;

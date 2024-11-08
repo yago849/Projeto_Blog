@@ -1,40 +1,109 @@
 <script>
-
+export default {
+  name: 'TelaLogin',
+  data() {
+    return {
+      email: '',
+      senha: ''
+    };
+  },
+  methods: {
+    emitlogin() {
+      console.log("Email ; "+ this.email);
+      this.$emit("login", this.email);
+    },
+  }
+}
 </script>
 
 <template>
-    <div class="tela-login">
-        <div class="login">
-            <h1>login</h1>
-            <form method="post" class="formulario">
+  <div class="tela-login">
+    <div class="login">
+      <h1>Login - Le Mans</h1>
+      <form>
 
-                <div class="caixa1">
-                    <label for="email">Email</label>
-                    <input type="text" placeholder="Digite o Email!!!" name="email">
-                </div>
+       
+        <label for="email">Email</label>
+        <input v-model="email" placeholder="Digite o Email!!!" name="email">
+        <label for="senha">Senha</label>
+        <input v-model="senha" type="password" placeholder="Digite a Senha!!!" name="senha">
+      
 
-                <p class="epo" style="widht: 500px;">usuario@admin.com.br</p>
+        <hr>
+        <button @click="emitlogin">Entrar</button>
 
-                <div class="caixa2">
-                    <label for="senha">Senha</label>
-                    <input type="password" placeholder="Digite a Senha!!!" name="senha">
-                    <i class="bi bi-eye-fill"></i>
-                </div>
-
-                <hr>
-
-                <button type="button" class="btn btn-primary">Entrar</button>
-            </form>
-        </div>
+      </form>
     </div>
+  </div>
 </template>
 
 <style scoped>
-i{
-    position: relative;
-    left: 90%;
-    top: -30px;
-    color: black;
-    font-size: 20px;
+.tela-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  background-image: url('../assets/imgLemans.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: #004aad;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.caixa1, .caixa2 {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.epo {
+  color: #666;
+  font-size: 12px;
+}
+
+button {
+  background-color: #004aad;
+  color: white;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #003080;
 }
 </style>

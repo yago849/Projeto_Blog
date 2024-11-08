@@ -1,32 +1,42 @@
-<script setup>
-import Cabecalho from './components/cabecalho.vue'
-import Postagem from './components/componenteBlog.vue'
-import Login from './components/TelaLogin.vue'
-import Home from './components/Home.vue'
+<script>
+  import Cabecalho from "./components/cabecalho.vue"
+  import logotipo from './assets/logo.png'
+  import Login from './components/TelaLogin.vue';
 
-
+  export default {
+    name: 'App',
+    components: {
+      Cabecalho,
+      Login
+    },
+    data() {
+      return {
+        logotipo: logotipo,
+        email: ""
+      }
+    },
+    methods: {
+      // Metodo que recebe o email do componente filho
+      checkLogin(email) {
+        console.log("Usuario recebido: " + email);
+        this.email = email;
+        this.$router.push('/areapostagem');
+      }
+    }
+  }
 </script>
 
 <template>
-  <div class="container">
-    <div class="cabecalho">
-      <Cabecalho />
-    </div>
-    
-    <router-view/>
-
-    <Postagem  />
-  </div>
-
+    <Cabecalho :logotipo="logotipo" :usuario="email"/>
+    <router-view @login="checkLogin"></router-view>
 </template>
 
-
 <style scoped>
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
+  h1{
+    font-size: 70px;
+  }
+
+  h1, h2 {
+    font-weight: bolder;
+  }
 </style>

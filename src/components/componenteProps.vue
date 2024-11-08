@@ -10,44 +10,63 @@ export default {
 </script>
 
 <template>
-  <div class="post">
-    <div class="image-container">
-      <img :src="imagem" alt="" class="post-image">
+  <div class="post-card">
+    <div class="post">
+      <div class="image-container">
+        <img :src="imagem" alt="" class="post-image">
+      </div>
+      <p class="post-content">{{ conteudo }}</p>
+      <h2 class="post-author">{{ autor }}</h2>
     </div>
-    <p class="post-content">{{ conteudo }}</p>
-    <h2 class="post-author">{{ autor }}</h2>
   </div>
 </template>
 
-<style>
-.post {
-  width: 80%;
+<style scoped>
+
+.post-card {
+  background-color: #004aad; 
+  border: 4px solid #ff1100; 
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
   max-width: 600px;
-  margin: 0 auto 20px;
+  margin: 20px auto;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.post-card:hover {
+  transform: scale(1.05); 
+}
+
+.post {
   text-align: center;
-  position: relative;
 }
 
 .image-container {
-  margin-bottom: 40px;
-  padding: 30px;
-}
-
-.post-image {
+  margin-bottom: 20px;
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  overflow: hidden;
   border-radius: 10px;
 }
 
+.post-image {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
 .post-content {
-  text-align: center;
+  font-size: 1.5em; 
   margin: 10px 0;
+  color: white;
 }
 
 .post-author {
+  font-size: 1.2em; 
   text-align: right;
-  margin: 0 10px;
+  margin: 10px 0;
+  color: #ffffff; 
 }
-
 </style>

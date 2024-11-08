@@ -55,9 +55,9 @@ h2 {
 
 h1 {
   font-size: 60px;
-  font-family: 'Montserrat', sans-serif; /* Aplica a fonte Montserrat */
-  color: #00BFFF; /* Cor base */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
+  font-family: 'Montserrat', sans-serif; 
+  color: #00BFFF; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
 }
 
 .autor {

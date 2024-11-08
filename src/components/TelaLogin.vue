@@ -1,109 +1,106 @@
 <script>
-export default {
-  name: 'TelaLogin',
-  data() {
-    return {
-      email: '',
-      senha: ''
-    };
-  },
-  methods: {
-    emitlogin() {
-      console.log("Email ; "+ this.email);
-      this.$emit("login", this.email);
-    },
-  }
-}
+    export default {
+        name: "Login",
+        data() {
+            return {
+                email: "",
+                senha: ""
+            }
+        },
+        methods: {
+            // Método que emite um evento para o componente pai
+            emitLogin() {
+                // chama o método checkLogin do componente pai
+                console.log("Email: " + this.email);
+                this.$emit("login", this.email);
+            },
+        }
+    }
 </script>
 
 <template>
-  <div class="tela-login">
-    <div class="login">
-      <h1>Login - Le Mans</h1>
-      <form>
-
-       
-        <label for="email">Email</label>
-        <input v-model="email" placeholder="Digite o Email!!!" name="email">
-        <label for="senha">Senha</label>
-        <input v-model="senha" type="password" placeholder="Digite a Senha!!!" name="senha">
-      
-
-        <hr>
-        <button @click="emitlogin">Entrar</button>
-
-      </form>
+    <div id="login">
+        <h1>Login</h1>
+        <form>
+            <label for="email">E-mail:</label>
+            <input v-model="email" placeholder="Enter your email" />
+            <label for="senha">Senha:</label>
+            <input v-model="senha" type="password" id="senha" name="senha">
+            <button @click="emitLogin">Entrar</button>
+        </form>
     </div>
-  </div>
 </template>
 
 <style scoped>
-.tela-login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 550px;
-  background-image: url('../assets/imgLemans.jpg');
-  background-size: cover;
-  background-position: center;
-  font-family: 'Poppins', sans-serif;
-}
+    /* Estilo do container de login */
+    #login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 350px; /* Largura menor para o quadro */
+        padding: 20px;
+        background-color: #1C1C1C; /* Fundo escuro */
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar o quadro */
+        color: #FFFFFF;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0 auto;
+    }
 
-.login {
-  background-color: white;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-  max-width: 400px;
-  width: 100%;
-  text-align: center;
-}
+    /* Estilização do título */
+    h1 {
+        font-size: 2em;
+        font-weight: 800;
+        color: #FFD700; /* Dourado, para representar o troféu */
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
 
-h1 {
-  color: #004aad;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
+    /* Estilo dos labels */
+    label {
+        font-size: 1em;
+        color: #FFFFFF;
+        margin-bottom: 5px;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
 
-.formulario {
-  display: flex;
-  flex-direction: column;
-}
+    /* Estilo dos campos de input */
+    input {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0 20px 0; /* Espaço maior entre as caixas de texto */
+        border: none;
+        border-radius: 5px;
+        background-color: #2A2A2A; /* Cor escura para os campos */
+        color: #FFFFFF;
+        font-size: 1em;
+    }
 
-.caixa1, .caixa2 {
-  margin-bottom: 20px;
-}
+    /* Estilo do botão */
+    button {
+        background-color: #0077B6; /* Azul brilhante para um toque esportivo */
+        color: #FFFFFF;
+        border: none;
+        padding: 12px;
+        border-radius: 5px;
+        font-size: 1.1em;
+        font-weight: bold;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.3s ease;
+    }
 
-label {
-  font-weight: bold;
-  color: #333;
-}
+    button:hover {
+        background-color: #FFD700; /* Muda para dourado ao passar o mouse */
+    }
 
-input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.epo {
-  color: #666;
-  font-size: 12px;
-}
-
-button {
-  background-color: #004aad;
-  color: white;
-  padding: 10px 0;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-button:hover {
-  background-color: #003080;
-}
+    /* Animação ao clicar */
+    button:active {
+        transform: scale(0.98);
+    }
 </style>
+

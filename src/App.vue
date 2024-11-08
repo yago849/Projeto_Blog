@@ -1,5 +1,5 @@
 <script>
-  import Cabecalho from "./components/cabecalho.vue"
+  import Cabecalho from "./components/Cabeçalho.vue"
   import logotipo from './assets/logo.png'
   import Login from './components/TelaLogin.vue';
 

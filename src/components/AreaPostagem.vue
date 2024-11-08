@@ -1,11 +1,11 @@
 <script setup lang="ts">
-    import componenteBlog from './componenteBlog.vue';
-import ComponenteProps from './componenteProps.vue';
+    import Postagens from './Postagens.vue';
+
 </script>
 
 <template>
     <div id="area-postagem">
-      <ComponenteProps/>
+      <Postagens/>
     </div>
 </template>
 
